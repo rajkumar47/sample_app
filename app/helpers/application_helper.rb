@@ -1,5 +1,6 @@
 module ApplicationHelper
 
+	# -----------
 	# Return title for each page
 	def title
 		base_title = "RoR"
@@ -8,5 +9,14 @@ module ApplicationHelper
 		else
 			"#{base_title} | #{@title}"
 		end
+	end
+
+	# -------------
+	# Return the logo
+	def logo
+      @logo_image = "logo.png"
+      @alt = "Logo Image"
+      tag = image_tag(@logo_image, :alt => @alt, :class => "round")
+	  return tag.to_s
 	end
 end
