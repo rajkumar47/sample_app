@@ -5,5 +5,5 @@
   sample app.
 </p>
 
-<%= link_to "Sign up now!", signup_path, :class => "signup_button round" %>
+<%= link_to "Sign up now!", '#', :class => "signup_button round" %>
 
